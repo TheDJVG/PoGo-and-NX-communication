@@ -11,6 +11,8 @@ It seems like the codename for this specific project between PoGo and NX is call
 
 It seems that the Switch generates a Nonce with 16 byte lenght but the value is transported in hex instead of bytes (or the Nonce is generated from only printable characters). A nonce cannot be reused. Pokemon GO will reject the connection if it receives a Nonce used before. Unclear if this is for the lifecycle of the application or the value is actually stored somewhere? 
 
+Changes in mac address and trainer name do not seem to affect the encryption. The share data encryption does change when the Application ID and/or Nonce changes.
+
 # Bluetooh Low Energy Services & Characteristics
 Pokemon GO is considered the Peripheral and the Ninendo Switch is the Central.
 
